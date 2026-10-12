@@ -3,16 +3,18 @@
 # Вместо ... впишите своё имя, вместо raise NotImplementedError — решение.
 # Проверить, что файл запускается без ошибок: python3 tasks.py
 
-from math import *
 
 def fizzbuzz(n):
-    if n%15==0:
-        return "FizzBuzz"
-    if n%3==0:
+    if (n % 3 == 0 and n % 5 == 0):
+        return "Fizzbuzz"
+    if (n % 3 == 0):
         return "Fizz"
-    if n%5==0:
+    if (n % 5 == 0):
         return "Buzz"
-    return str(n)
+    else:
+        return n
+
+        
     """Вернуть "FizzBuzz", если n делится на 3 и на 5, "Fizz" — только на 3,
     "Buzz" — только на 5, иначе само число строкой.
 
@@ -23,6 +25,7 @@ def fizzbuzz(n):
         fizzbuzz(7) -> "7"
     """
     # Реализовал(а): Daria
+    # Реализовал(а): ...
     raise NotImplementedError
 
 
