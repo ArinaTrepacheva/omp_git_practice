@@ -24,17 +24,15 @@ def fizzbuzz(n):
         fizzbuzz(15) -> "FizzBuzz"
         fizzbuzz(7) -> "7"
     """
+    # Реализовал(а): Daria
     # Реализовал(а): ...
     raise NotImplementedError
 
 
 def is_prime(n):
-    """Вернуть True, если n — простое число (больше 1 и делится только на 1 и на себя).
-
-    Примеры:
-        is_prime(13) -> True
-        is_prime(9) -> False
-        is_prime(1) -> False
-    """
-    # Реализовал(а): ...
+    for i in range(2, sqrt(n)+1):
+        if n%i==0:
+            return False
+    return True
+    # Реализовал(а): Daria
     raise NotImplementedError
