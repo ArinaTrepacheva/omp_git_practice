@@ -4,15 +4,17 @@
 # Проверить, что файл запускается без ошибок: python3 tasks.py
 
 
-
 def fizzbuzz(n):
-    if n % 3 == 0 and n % 5 == 0:
-        return "FizzBuzz"
-    if n % 3 == 0:
+    if (n % 3 == 0 and n % 5 == 0):
+        return "Fizzbuzz"
+    if (n % 3 == 0):
         return "Fizz"
-    if n % 5 == 0:
+    if (n % 5 == 0):
         return "Buzz"
-    
+    else:
+        return n
+
+        
     """Вернуть "FizzBuzz", если n делится на 3 и на 5, "Fizz" — только на 3,
     "Buzz" — только на 5, иначе само число строкой.
 
@@ -22,7 +24,7 @@ def fizzbuzz(n):
         fizzbuzz(15) -> "FizzBuzz"
         fizzbuzz(7) -> "7"
     """
-    # Реализовал(а): Arina
+    # Реализовал(а): ...
     raise NotImplementedError
 
 
@@ -34,12 +36,5 @@ def is_prime(n):
         is_prime(9) -> False
         is_prime(1) -> False
     """
-    if n == 1:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-
-    # Реализовал(а): Arina
+    # Реализовал(а): ...
     raise NotImplementedError
